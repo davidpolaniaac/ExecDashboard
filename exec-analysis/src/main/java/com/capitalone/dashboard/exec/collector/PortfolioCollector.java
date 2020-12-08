@@ -243,7 +243,7 @@ public class PortfolioCollector implements Runnable {
         dashboardRowsList = dashboardRows.collectAsList();
         List<Portfolio> portfolioList = createPortfolios();
         portfolioRepositoryThumbnail.deleteAll();
-        getPortfolioWithThumbnails(portfolioList);
+        //getPortfolioWithThumbnails(portfolioList);
         portfolioRepository.deleteAll();
         portfolioRepository.save(portfolioList);
         LOGGER.info("##### End: collectCMDB #####");
